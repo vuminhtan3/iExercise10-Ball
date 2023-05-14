@@ -13,6 +13,9 @@
 		B43F91702A10F1AD005900F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B43F916E2A10F1AD005900F6 /* Main.storyboard */; };
 		B43F91722A10F1AE005900F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B43F91712A10F1AE005900F6 /* Assets.xcassets */; };
 		B43F91752A10F1AE005900F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B43F91732A10F1AE005900F6 /* LaunchScreen.storyboard */; };
+		B43F917D2A110CB7005900F6 /* BallAroundEdgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43F917C2A110CB7005900F6 /* BallAroundEdgeViewController.swift */; };
+		B43F917F2A113EAB005900F6 /* BallZigzacViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43F917E2A113EAB005900F6 /* BallZigzacViewController.swift */; };
+		B43F91812A115037005900F6 /* FreeFallBallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43F91802A115036005900F6 /* FreeFallBallViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		B43F91712A10F1AE005900F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B43F91742A10F1AE005900F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B43F91762A10F1AE005900F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B43F917C2A110CB7005900F6 /* BallAroundEdgeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallAroundEdgeViewController.swift; sourceTree = "<group>"; };
+		B43F917E2A113EAB005900F6 /* BallZigzacViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallZigzacViewController.swift; sourceTree = "<group>"; };
+		B43F91802A115036005900F6 /* FreeFallBallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeFallBallViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +65,9 @@
 				B43F91682A10F1AD005900F6 /* AppDelegate.swift */,
 				B43F916A2A10F1AD005900F6 /* SceneDelegate.swift */,
 				B43F916C2A10F1AD005900F6 /* ViewController.swift */,
+				B43F917C2A110CB7005900F6 /* BallAroundEdgeViewController.swift */,
+				B43F917E2A113EAB005900F6 /* BallZigzacViewController.swift */,
+				B43F91802A115036005900F6 /* FreeFallBallViewController.swift */,
 				B43F916E2A10F1AD005900F6 /* Main.storyboard */,
 				B43F91712A10F1AE005900F6 /* Assets.xcassets */,
 				B43F91732A10F1AE005900F6 /* LaunchScreen.storyboard */,
@@ -139,7 +148,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B43F916D2A10F1AD005900F6 /* ViewController.swift in Sources */,
+				B43F917D2A110CB7005900F6 /* BallAroundEdgeViewController.swift in Sources */,
 				B43F91692A10F1AD005900F6 /* AppDelegate.swift in Sources */,
+				B43F917F2A113EAB005900F6 /* BallZigzacViewController.swift in Sources */,
+				B43F91812A115037005900F6 /* FreeFallBallViewController.swift in Sources */,
 				B43F916B2A10F1AD005900F6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

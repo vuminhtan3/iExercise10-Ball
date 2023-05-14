@@ -1,24 +1,184 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iExercise_Ball" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="133" translatesAutoresizingMaskIntoConstraints="NO" id="RtC-bR-EUe">
+                                <rect key="frame" x="79.000000000000014" y="241.66666666666663" width="235.33333333333337" height="369"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zyS-9k-cLm">
+                                        <rect key="frame" x="0.0" y="0.0" width="235.33333333333334" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Ball move around the edges"/>
+                                        <connections>
+                                            <segue destination="0jx-Ll-lan" kind="presentation" animates="NO" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="Lw2-PB-xMz"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wXo-51-L7C">
+                                        <rect key="frame" x="42" y="167.33333333333334" width="151" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Ball move zigzac"/>
+                                        <connections>
+                                            <segue destination="pSy-tq-qY1" kind="presentation" animates="NO" modalPresentationStyle="fullScreen" id="SxX-wy-AZc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KdZ-GA-cAZ">
+                                        <rect key="frame" x="59.999999999999993" y="334.66666666666674" width="115.33333333333331" height="34.333333333333314"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Free fall ball"/>
+                                        <connections>
+                                            <segue destination="Sje-vg-m5c" kind="presentation" animates="NO" modalPresentationStyle="fullScreen" id="7nJ-yb-MYK"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="RtC-bR-EUe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Q1r-mQ-eRB"/>
+                            <constraint firstItem="RtC-bR-EUe" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="cU5-US-M5O"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="25" y="4"/>
+        </scene>
+        <!--Ball Zigzac View Controller-->
+        <scene sceneID="6a6-Na-Bzr">
+            <objects>
+                <viewController id="pSy-tq-qY1" customClass="BallZigzacViewController" customModule="iExercise_Ball" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Obq-yF-6by">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G7t-zb-z58">
+                                <rect key="frame" x="162.66666666666666" y="408.66666666666669" width="68" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="BACK"/>
+                                <connections>
+                                    <action selector="backButtonPressed:" destination="0jx-Ll-lan" eventType="touchUpInside" id="K4T-GG-V4H"/>
+                                    <action selector="backButtonPressed:" destination="pSy-tq-qY1" eventType="touchUpInside" id="vsa-V4-PPB"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aVq-eb-6kG">
+                                <rect key="frame" x="16" y="59" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="HuP-eE-WxG"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="G7t-zb-z58" firstAttribute="centerX" secondItem="Obq-yF-6by" secondAttribute="centerX" id="6Ds-M6-msA"/>
+                            <constraint firstItem="G7t-zb-z58" firstAttribute="centerY" secondItem="Obq-yF-6by" secondAttribute="centerY" id="kRL-pk-sK6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ballView" destination="aVq-eb-6kG" id="fGQ-b9-2zW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fnl-qf-QiY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="937" y="4"/>
+        </scene>
+        <!--Free Fall Ball View Controller-->
+        <scene sceneID="ybM-XI-WTm">
+            <objects>
+                <viewController id="Sje-vg-m5c" customClass="FreeFallBallViewController" customModule="iExercise_Ball" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Mw5-Bs-gEz">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p6g-q2-VTP">
+                                <rect key="frame" x="162.66666666666666" y="408.66666666666669" width="68" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="BACK"/>
+                                <connections>
+                                    <action selector="backButtonPressed:" destination="Sje-vg-m5c" eventType="touchUpInside" id="6c3-aU-1rp"/>
+                                    <action selector="backButtonPressed:" destination="pSy-tq-qY1" eventType="touchUpInside" id="QZA-J8-ddm"/>
+                                    <action selector="backButtonPressed:" destination="0jx-Ll-lan" eventType="touchUpInside" id="Yhv-7w-cuc"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lGQ-2e-Kyc">
+                                <rect key="frame" x="171" y="59" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="7ex-VZ-uM2"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="p6g-q2-VTP" firstAttribute="centerX" secondItem="Mw5-Bs-gEz" secondAttribute="centerX" id="T4O-FF-iMn"/>
+                            <constraint firstItem="p6g-q2-VTP" firstAttribute="centerY" secondItem="Mw5-Bs-gEz" secondAttribute="centerY" id="sOm-ap-mzY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ballView" destination="lGQ-2e-Kyc" id="b5c-B2-nnQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iUO-4T-JJ9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="937" y="655"/>
+        </scene>
+        <!--Ball Around Edge View Controller-->
+        <scene sceneID="tDs-ZM-oJD">
+            <objects>
+                <viewController id="0jx-Ll-lan" customClass="BallAroundEdgeViewController" customModule="iExercise_Ball" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Atm-LV-wfK">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d8J-l9-WyN">
+                                <rect key="frame" x="162.66666666666666" y="408.66666666666669" width="68" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="BACK"/>
+                                <connections>
+                                    <action selector="backButtonPressed:" destination="0jx-Ll-lan" eventType="touchUpInside" id="uRl-mp-xtU"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ge3-d1-zx4">
+                                <rect key="frame" x="16" y="59" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="oIN-N6-Vtr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="d8J-l9-WyN" firstAttribute="centerY" secondItem="Atm-LV-wfK" secondAttribute="centerY" id="7R7-ac-F5q"/>
+                            <constraint firstItem="d8J-l9-WyN" firstAttribute="centerX" secondItem="Atm-LV-wfK" secondAttribute="centerX" id="hje-zF-V3v"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ballView" destination="Ge3-d1-zx4" id="W2f-Od-kYZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N1s-fG-RRX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="919.84732824427476" y="-679.57746478873241"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
